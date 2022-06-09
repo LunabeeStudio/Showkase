@@ -16,7 +16,7 @@ import com.airbnb.android.showkase.models.ShowkaseElementsMetadata
  * The activity that's responsible for showing all the UI elements that were annotated
  * with the Showkase related annotations.
  */
-class ShowkaseBrowserActivity : AppCompatActivity() {
+open class ShowkaseBrowserActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val classKey = intent.extras?.getString(SHOWKASE_ROOT_MODULE_KEY) ?: throw ShowkaseException(
